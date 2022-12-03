@@ -1,0 +1,25 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "medium-blue": "#0079FF",
+        "medium-gray": "#697C9A",
+        "grayish-blue": "#4b6a9b",
+        "dark-grayish-blue": "#2B3442",
+        "lighter-blue": "#F6F8FF",
+        whitish: "#fefefe",
+        "darker-blue": "#1E2A47",
+        "darkest-blue": "#141D2F",
+      },
+      screens: {
+        "c-md": "426px",
+      },
+    },
+  },
+  plugins: [],
+};
