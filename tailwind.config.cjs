@@ -3,7 +3,9 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -17,7 +19,12 @@ module.exports = {
         "darkest-blue": "#141D2F",
       },
       screens: {
+        "c-sm": "320px",
         "c-md": "426px",
+        "c-lg": "769px",
+      },
+      fontFamily: {
+        spacemono: ["Space Mono", "monospace"],
       },
     },
   },
