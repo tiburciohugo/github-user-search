@@ -25,7 +25,7 @@ const App = () => {
 
   const [theme, setTheme] = useState("light");
 
-  const toggleTheme = () => {
+  const toggleTheme = (): void | string | null | undefined => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
