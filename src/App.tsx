@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 import Navbar from "./components/Navbar";
 import Searchbar from "./components/Searchbar";
 
-export const ThemeContext = createContext(null);
+export const ThemeContext: any = createContext(null);
 
 const App = () => {
   // Themes
