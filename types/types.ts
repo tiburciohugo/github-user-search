@@ -71,3 +71,4 @@ export interface RootObject {
 export interface ContextProps {
   data: string | string[] | undefined;
 }
+
