@@ -71,7 +71,7 @@ export default function Searchbar(data: any) {
           className="c-md:ml-2 c-lg:ml-4"
         />
         <input
-          className="w-full bg-transparent outline-none placeholder:text-[0.813rem] c-md:ml-2 c-lg:ml-4 c-lg:placeholder:text-lg"
+          className="w-full bg-transparent outline-none placeholder:text-[0.813rem] c-md:ml-2 c-lg:ml-4 c-lg:placeholder:text-lg dark:text-white"
           type="text"
           placeholder="Search Github username..."
           onChange={changeHandler}
@@ -86,7 +86,7 @@ export default function Searchbar(data: any) {
           Search
         </button>
         {loading ? (
-          <p className="text-sm absolute left-auto right-auto top-20 text-gray-600">
+          <p className="absolute left-auto right-auto text-sm text-gray-600 top-20">
             Loading...
           </p>
         ) : null}
