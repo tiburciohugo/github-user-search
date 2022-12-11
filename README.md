@@ -20,7 +20,7 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/github-user-search-app-e4TnIP4UNR)
 - Live Site URL: [Add live site URL here](https://github-user-search-tiburcio.vercel.app)
 
 ## My process
