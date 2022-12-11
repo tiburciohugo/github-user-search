@@ -14,8 +14,6 @@ export default function Searchbar(data: any) {
   const [error, setError] = React.useState(false);
   const [errorMessage, setErrorMessage] = React.useState("");
 
-  
-
   useEffect(() => {
     const fetchDefaultUser = async () => {
       const response = await fetch(`https://api.github.com/users/octocat`);
@@ -77,11 +75,10 @@ export default function Searchbar(data: any) {
           type="text"
           placeholder="Search Github username..."
           onBlur={changeHandler}
-          onKeyDown={handleKeyDown}
+          onKeyDown={(e) => e.key === "Enter" && fetchUser()}
         />
         <button
           onClick={fetchUser}
-          onKeyDown={handleKeyDown}
           tabIndex={0}
           type="button"
           className="flex items-center justify-center w-20 px-4 font-bold text-white rounded-lg bg-medium-blue hover:bg-dark-blue h-11"
