@@ -70,13 +70,24 @@ export default function Searchbar(data: any) {
           alt="search-icon"
           className="c-md:ml-2 c-lg:ml-4"
         />
-        <input
-          className="w-full bg-transparent outline-none placeholder:text-[0.813rem] c-md:ml-2 c-lg:ml-4 c-lg:placeholder:text-lg dark:text-white"
-          type="text"
-          placeholder="Search Github username..."
-          onChange={changeHandler}
-          onKeyDown={(e) => e.key === "Enter" && fetchUser()}
-        />
+        {error ? (
+          <input
+            className="w-full bg-transparent outline-none placeholder:text-transparent"
+            type="text"
+            placeholder="Search Github username..."
+            onChange={changeHandler}
+            onKeyDown={(e) => e.key === "Enter" && fetchUser()}
+          />
+        ) : (
+          <input
+            className="w-full bg-transparent outline-none placeholder:text-[0.813rem] c-md:ml-2 c-lg:ml-4 c-lg:placeholder:text-lg dark:text-white"
+            type="text"
+            placeholder="Search Github username..."
+            onChange={changeHandler}
+            onKeyDown={(e) => e.key === "Enter" && fetchUser()}
+          />
+        )}
+
         <button
           onClick={fetchUser}
           tabIndex={0}
