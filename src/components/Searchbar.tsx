@@ -86,9 +86,12 @@ export default function Searchbar(data: any) {
           Search
         </button>
         {loading ? (
-          <p className="absolute left-auto right-auto text-sm text-gray-600 top-20">
-            Loading...
-          </p>
+          <div
+            className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full absolute left-auto right-auto text-sm top-20 text-gray-600"
+            role="status"
+          >
+            <span className="hidden">Loading...</span>
+          </div>
         ) : null}
         {error ? (
           <p className="text-sm font-semibold text-rose-600 absolute left-auto c-md:left-[58%] c-lg:left-[58%] xl:left-[55%] right-[38%] c-md:right-[20%] top-30">
