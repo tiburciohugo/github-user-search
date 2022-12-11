@@ -72,7 +72,7 @@ export default function Searchbar(data: any) {
         />
         {error ? (
           <input
-            className="w-full bg-transparent outline-none placeholder:text-transparent"
+            className="w-full bg-transparent outline-none placeholder:text-transparent dark:text-white"
             type="text"
             placeholder="Search Github username..."
             onChange={changeHandler}
