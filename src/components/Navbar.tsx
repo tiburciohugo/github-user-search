@@ -24,31 +24,27 @@ export default function Navbar(props: NavbarProps) {
       {condition ? (
         <button
           onClick={props.theme}
-          className="flex items-center justify-between space-x-2 cursor-pointer white-text hover:gray-blue"
+          className="flex items-center justify-between space-x-2 cursor-pointer white-text hover:gray-blue font-semibold h-[1.188rem] text-grayish-blue dark:fill-white"
         >
-          <p className="font-semibold h-[1.188rem] text-grayish-blue dark:fill-white">
-            LIGHT
-          </p>
+          LIGHT
           <img
             id="sun"
             src={sun}
             alt="sun-icon"
-            className="fill-black grayish-blue dark:fill-white "
+            className="fill-black grayish-blue dark:fill-white ml-2"
           />
         </button>
       ) : (
         <button
           onClick={props.theme}
-          className="flex items-center justify-between space-x-2 cursor-pointer hover:dark-hover"
+          className="flex items-center justify-between space-x-2 cursor-pointer hover:dark-hover font-semibold h-[1.188rem] text-grayish-blue dark:fill-white"
         >
-          <p className="font-semibold h-[1.188rem] text-grayish-blue dark:fill-white ">
-            DARK
-          </p>
+          DARK
           <img
             id="moon"
             src={moon}
             alt="moon-icon"
-            className="grayish-blue dark:fill-white"
+            className="grayish-blue dark:fill-white ml-2"
           />
         </button>
       )}

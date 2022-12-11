@@ -91,7 +91,7 @@ export default function Searchbar(data: any) {
           </p>
         ) : null}
         {error ? (
-          <p className="text-sm font-semibold text-rose-600 absolute left-auto c-md:left-[60%] right-[38%] c-md:right-[24%] top-30">
+          <p className="text-sm font-semibold text-rose-600 absolute left-auto c-md:left-[58%] c-lg:left-[58%] xl:left-[55%] right-[38%] c-md:right-[20%] top-30">
             No results
           </p>
         ) : null}

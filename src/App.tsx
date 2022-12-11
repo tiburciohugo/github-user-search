@@ -23,7 +23,7 @@ const App = () => {
     }
   }
 
-  const [theme, setTheme]: [theme: string, setTheme: any] = useState("light");
+  const [theme, setTheme]: [theme: string, setTheme: any] = useState("dark");
 
   const toggleTheme = (): any => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -32,7 +32,7 @@ const App = () => {
   return (
    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div
-        className="w-full h-full px-4 c-md:max-w-[35.813rem] c-md:mx-auto font-spacemono c-lg:max-w-[45.625rem] bg-lighter-blue dark:bg-darkest-blue"
+        className="w-full h-screen px-4 c-md:max-w-[35.813rem] c-md:mx-auto font-spacemono c-lg:max-w-[45.625rem] bg-lighter-blue dark:bg-darkest-blue grid content-center"
         id={theme}
       >
         <Navbar theme={changeTheme} />
