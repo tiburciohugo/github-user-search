@@ -81,12 +81,22 @@ export default function Searchbar(data: any) {
           onClick={fetchUser}
           tabIndex={0}
           type="button"
-          className="flex items-center justify-center w-20 px-4 font-bold text-white rounded-lg bg-medium-blue hover:bg-dark-blue h-11"
+          className="flex items-center justify-center w-20 px-4 font-bold text-white rounded-lg bg-medium-blue hover:bg-medium-blue-light h-11"
         >
           Search
         </button>
+        {loading ? (
+          <p className="text-sm absolute left-auto right-auto top-20 text-gray-600">
+            Loading...
+          </p>
+        ) : null}
+        {error ? (
+          <p className="text-sm font-semibold text-rose-600 absolute left-auto c-md:left-[60%] right-[38%] c-md:right-[24%] top-30">
+            No results
+          </p>
+        ) : null}
       </div>
-      <Hero data={user} />
+      {error ? null : <Hero data={user} />}
     </>
   );
 }
