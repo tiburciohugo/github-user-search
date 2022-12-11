@@ -74,7 +74,7 @@ export default function Searchbar(data: any) {
           className="w-full bg-transparent outline-none placeholder:text-[0.813rem] c-md:ml-2 c-lg:ml-4 c-lg:placeholder:text-lg"
           type="text"
           placeholder="Search Github username..."
-          onBlur={changeHandler}
+          onChange={changeHandler}
           onKeyDown={(e) => e.key === "Enter" && fetchUser()}
         />
         <button
